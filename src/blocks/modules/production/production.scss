@@ -1,0 +1,87 @@
+.production {
+    padding-top: 87px;
+    padding-bottom: 90px;
+
+    &-slider {
+        position: relative;
+        z-index: 2;
+
+        &_top {
+            margin-bottom: 13px;
+            height: 377px;
+            width: 100%;
+            overflow-y: hidden;
+
+            img {
+                min-height: 377px;
+                outline: none;
+            }
+        }
+
+        &_bottom {
+            width: 100%;
+
+            overflow: hidden;
+
+            img {
+                margin: 0 6px;
+                height: 78px;
+                min-height: 78px;
+                outline: none;
+            }
+        }
+
+        &__top-img {
+            min-height: 377px;
+        }
+    }
+
+    &-text {
+        // max-width: 379px;
+
+        &__title {
+            position: relative;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10%;
+            margin-top: 19px;
+            margin-bottom: 28px;
+            margin-left: -10%;
+            width: 110%;
+            z-index: -1;
+            color: $white-text;
+            background-color: $active-color-button;
+            font-size: 28px;
+            font-weight: 300;
+
+        }
+
+        &__descr {
+            font-size: 16px;
+            font-weight: 300;
+            // line-height: 24px;
+            text-align: justify;
+
+        }
+    }
+}
+
+// оформление стрелок
+.production-arrow_left,
+.production-arrow_right {
+
+    width: 22px;
+    height: 78px;
+    border: $active-color-button solid 1px;
+    color: $active-color-button;
+    font-size: 22px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $active-color-button;
+        color: $white-text;
+    }
+    p {
+        margin-top: 10px;
+    }
+}

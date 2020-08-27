@@ -1,0 +1,111 @@
+// Затемнение
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+// Всплывающее окно обраной связb
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    width: 730px;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+
+    // модальное окно "Подробнее"
+    &-modal {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    // стилизуем крестик закрыть
+    &-close {
+        position: absolute;
+        right: -20px;
+        top: -37px;
+        font-size: 35px;
+        color: $white-text;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    &-title {
+        display: block;
+        margin: 0;
+        width: 100%;
+        // height: 68px;
+        line-height: 68px;
+        background-color: $tangerine;
+        color: $white-text;
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-form {
+        padding: 40px 75px 50px 75px;
+        color: $white-text;
+        background: #373737 url(../img/jpg/bgModal.webp) center no-repeat;
+        background-size: cover;
+
+        &__header {
+            padding: 0;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 0.9;
+            text-align: center;
+        }
+
+        &__text {
+            margin-top: 10px;
+            padding: 0;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 0.9;
+            text-align: center;
+        }
+
+        &__label {
+            display: block;
+            margin-top: 23px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &__input {
+            margin-top: 17px;
+            width: 365px;
+            height: 56px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        &__btn {
+            margin-left: 16px;
+            width: 180px;
+            height: 56px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+            background-color: $tangerine;
+        }
+
+        &__note {
+            margin-top: 9px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+}

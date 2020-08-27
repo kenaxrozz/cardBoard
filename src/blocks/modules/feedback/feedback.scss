@@ -1,0 +1,41 @@
+.feedback {
+    padding-top: 55px;
+    padding-bottom: 65px;
+    background: $bg-color-light;
+
+    &-slider {
+        width: 100%;
+        max-width: 918px;
+
+        &-img {
+            margin-left: 14px;
+            margin-right: 14px;
+            height: 100%;
+            outline: none;
+            height: 350px;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &__arrow-left {
+            margin-right: 19px;
+            background: url(../img/svg/feedback-arrow_left.svg) center no-repeat;
+            background-size: contain;
+            width: 10px;
+            height: 47px;
+            cursor: pointer;
+        }
+
+        &__arrow-right {
+            margin-left: 19px;
+            background: url(../img/svg/feedback-arrow_right.svg) center no-repeat;
+            background-size: contain;
+            width: 10px;
+            height: 47px;
+            cursor: pointer;
+        }
+    }
+}

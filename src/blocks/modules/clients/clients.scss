@@ -1,0 +1,70 @@
+.container-margin {
+    margin-left: -30px;
+}
+
+.clients {
+    padding-bottom: 61px;
+    &-wrapper {
+        margin-bottom: 33px;
+        margin-left: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 100%;
+        max-width: 212px;
+        height: 130px;
+        filter: grayscale(100%);
+
+        &:hover {
+            cursor: pointer;
+            filter: grayscale(0%);
+        }
+
+        &-img-01 {
+            background: url(../img/jpg/01.webp) center no-repeat;
+        }
+
+        &-img-02 {
+            background: url(../img/jpg/02.webp) center no-repeat;
+        }
+
+        &-img-03 {
+            background: url(../img/jpg/03.webp) center no-repeat;
+        }
+
+        &-img-04 {
+            background: url(../img/jpg/04.webp) center no-repeat;
+        }
+
+        &-img-05 {
+            background: url(../img/jpg/05.webp) center no-repeat;
+        }
+
+        &-img-06 {
+            background: url(../img/jpg/06.webp) center no-repeat;
+        }
+
+        &-img-07 {
+            background: url(../img/jpg/07.webp) center no-repeat;
+        }
+
+        &-img-08 {
+            background: url(../img/jpg/08.webp) center no-repeat;
+        }
+
+        &-img-09 {
+            background: url(../img/jpg/09.webp) center no-repeat;
+        }
+
+        &-img-10 {
+            background: url(../img/jpg/10.webp) center no-repeat;
+        }
+
+        &-img-11 {
+            background: url(../img/jpg/11.webp) center no-repeat;
+        }
+
+        &-img-12 {
+            background: url(../img/jpg/12.webp) center no-repeat;
+        }
+    }
+}

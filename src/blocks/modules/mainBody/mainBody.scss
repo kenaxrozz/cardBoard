@@ -1,0 +1,33 @@
+//  mainBody =================================================
+
+.main {
+    // position: relative;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    background: #373737 url(../img/jpg/mainBg2x.webp) center no-repeat;
+    // z-index: 1;
+    color: $white-text;
+    background-size: cover;
+
+    &-text {
+        &__title {
+            margin-bottom: 20px;
+            font-size: 41px;
+            font-weight: 700;
+        }
+
+        &__subtitle {
+            margin-bottom: 27px;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        &__form {
+            padding: 30px 27px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }   
+    }
+}
+
+
+//  mainBody =================================================

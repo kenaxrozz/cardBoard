@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CardBoard</title>
+    <meta name="robots" content="none">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- yandex карты с логотипом -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    @@include("../blocks/modules/nav/nav.html")
+    @@include("../blocks/modules/header/header.html")
+    @@include("../blocks/modules/mainBody/mainBody.html")
+    @@include("../blocks/modules/modal/modal.html")
+    @@include("../blocks/modules/modalProducts/modalProducts.html")
+    @@include("../blocks/modules/modalSuccess/modalSuccess.html")
+    @@include("../blocks/modules/features/features.html")
+    @@include("../blocks/modules/products/products.html")
+    @@include("../blocks/modules/offer/offer.html")
+    @@include("../blocks/modules/production/production.html")
+    @@include("../blocks/modules/clients/clients.html")
+    @@include("../blocks/modules/feedback/feedback.html")
+    @@include("../blocks/modules/contacts/contacts.html")
+    @@include("../blocks/modules/footer/footer.html")
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // слайдер производство ==============================================================         
+            $('.production-slider_top').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.production-slider_bottom'
+            });
+            $('.production-slider_bottom').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }],
+                asNavFor: '.production-slider_top',
+                prevArrow: $('.production-arrow_left'),
+                nextArrow: $('.production-arrow_right'),
+                dots: false,
+                // в линию расположено одинаковое количество слайдов
+                centerMode: false,
+                focusOnSelect: true
+            });
+            // слайдер отзывы ==============================================================
+            $('.feedback-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.feedback-slider__arrow-left'),
+                nextArrow: $('.feedback-slider__arrow-right'),
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 577,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        },
+                    }
+                ],
+                centerMode: false,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <!-- <script src="js/wow.min.js"></script> -->
+    @@include("../blocks/modules/wow/wow.html")
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</body>
+
+</html>

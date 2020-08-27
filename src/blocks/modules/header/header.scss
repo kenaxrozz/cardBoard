@@ -1,0 +1,35 @@
+
+// header ===================================================================
+.header {
+    margin-top: 54px;
+    padding: 15px 0;
+
+    &-logo {
+        background: url(../img/png/logoImg.png) center no-repeat;
+        background-size: 100%;
+        width: 191px;
+        height: 61px;
+    }
+
+    &-contacts {
+        width: 100%;
+        &__border {
+            border-right: 1px solid #cfcfd0;
+        }
+
+        &__icon {
+            background: url(../img/svg/iconPhone.svg) center no-repeat;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &-contacts__phone {
+        // margin: 0 15px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+}
+
+// header ===================================================================

@@ -1,0 +1,26 @@
+.products {
+    padding-top: 57px;
+    padding-bottom: 73px;
+
+    &-block {
+        margin-bottom: 35px;
+        text-align: center;
+
+        &__img {
+
+            margin-bottom: 19px;
+            max-width: 410px;
+            max-height: 270px;
+        }
+
+        &__title {
+            margin-bottom: 28px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &__button {
+            margin-right: 12px;
+        }
+    }
+}

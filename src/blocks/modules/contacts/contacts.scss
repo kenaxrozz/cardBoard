@@ -1,0 +1,76 @@
+.contacts {
+    position: relative;
+    &-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    &-block {
+        // размещаем блок поверх карты
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        padding-top: 23px;
+        padding-bottom: 10px;
+        padding-left: 62px;
+        padding-right: 24px;
+        background-color: #fff;
+
+        &__title {
+            margin-bottom: 8px;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &__icon-point {
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 30px;
+                top: 23px;
+                display: inline-block;
+                width: 17px;
+                height: 25px;
+                background: url(../img/svg/point.svg ) center no-repeat;
+            }
+        }
+        &__icon-tel {
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 30px;
+                top: 173px;
+                display: inline-block;
+                width: 17px;
+                height: 25px;
+                background: url(../img/svg/tel.svg ) center no-repeat;
+            }
+        }
+        &__icon-email {
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 30px;
+                top: 355px;
+                display: inline-block;
+                width: 17px;
+                height: 25px;
+                background: url(../img/svg/email.svg ) center no-repeat;
+            }
+        }
+    }
+}
+
+// yandex карты
+.map {
+    width: 100%;
+    height: 550px;
+}

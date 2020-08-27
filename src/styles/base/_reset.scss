@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+// убираем выделение текста
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+// убираем синюю обводку у кнопок
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+.button {
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,122 @@
+.section {
+    &-title {
+        font-size: 27px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 29px;
+
+        // волнистая линия у заголовков
+        &::after {
+            content: '';
+            margin-top: 12px;
+            display: block;
+            height: 6px;
+            background: url(../img/png/line.png) center no-repeat;
+        }
+    }
+}
+
+// все кнопки
+.button {
+    font-size: 14px;
+    background-color: $active-color-button;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $white-text;
+    padding: 13px 22px;
+
+    &:hover {
+        background-color: lighten($active-color-button, 5);
+        cursor: pointer;
+    }
+
+    &-o {
+        // прозрачный background
+        background-color: transparent;
+        color: $text-color-dark;
+        border: 1px solid rgba(#373737, 0.5);
+
+        &:hover {
+            background-color: lighten($active-color-button, 5);
+            color: $white-text;
+            border: 1 px solid transparent;
+            cursor: pointer;
+        }
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    &_big {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        vertical-align: middle;
+    }
+}
+
+/*Затемнение фонового изображения*/
+.dark-bg {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+}
+
+// оформление форм
+.form {
+    margin-bottom: 12px;
+
+    &-title {
+
+        padding-right: 87px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    &-title__uppercase {
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        margin-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // padding: 20px;
+        width: 311px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: none;
+        vertical-align: middle;
+        width: 100%;
+        max-width: 365px;
+        text-align: center;
+    }
+
+    &-small {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+// подсветка nav
+.active {
+    color: $active-color-button;
+}
